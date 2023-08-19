@@ -1,0 +1,93 @@
+/*Small screen*/
+@media (max-width: 599px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 120px 100px auto 100px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "nv nv nv nv nv nv nv nv"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+  }
+
+  .navbar {
+    grid-area: nv;
+    background-color: #76a38e;
+    padding-top: 0px;
+  }
+
+  .nav-btn > a {
+    padding: 2px 2px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .nav-btn {
+    display: flex;
+    margin-bottom: 5px;
+    font-family: "Courier New", monospace;
+  }
+
+  .sidebar-title {
+    background-color: #1e251e;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .sidebar-ul {
+    list-style-type: none;
+    font-family: "Brush Script MT", cursive;
+    font-size: 20pt;
+    font-style: italic;
+    padding: 0px;
+    margin: 0;
+    color: #d9eee1;
+    font-size: small;
+  }
+  .sidebar-li > a {
+    font-size: small;
+    color: #ffffff;
+  }
+
+  .sidebar-li {
+    list-style-type: none;
+    text-indent: -4em;
+    padding-left: 1em;
+    text-align: left;
+  }
+}
+/*Medium screen*/
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 120px 50px auto 100px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "nv nv nv nv nv nv nv nv"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+  }
+
+  .navbar {
+    grid-area: nv;
+    background-color: #76a38e;
+    padding-top: 0px;
+  }
+}
+/*large Screen*/
+@media (min-width: 901px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 120px 670px 100px;
+    grid-template-areas:
+      "hd nv nv nv nv nv nv nv"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+  }
+}

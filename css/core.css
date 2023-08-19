@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 100px 50px 670px 100px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "nv nv nv nv nv nv nv nv"
+    "sd main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+}
+
+.header {
+  grid-area: hd;
+  background-color: #76a38e;
+}
+#title {
+  width: 300px;
+  padding-bottom: 5px;
+}
+
+.footer {
+  grid-area: ft;
+  text-align: center;
+  padding: 10px;
+  background-color: #111111;
+}
+#footer-text {
+  color: #d9eee1;
+  font-family: "Brush Script MT", cursive;
+}
+.sidebar {
+  grid-area: sd;
+  background-color: #76a38e;
+}
+.content {
+  grid-area: main;
+  background-image: url("../images/green-leaf.jpeg");
+  background-size: 500px 900px;
+}
+.navbar {
+  grid-area: nv;
+  background-color: #111111;
+  padding-top: 28px;
+}
+.navbar-ul {
+  list-style-type: none;
+}
+.nav-btn {
+  display: inline;
+  font-family: "Courier New", monospace;
+}
+
+.nav-btn > a {
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.nav-btn a:hover {
+  background-color: #ccc;
+}
+
+.sidebar-ul {
+  list-style-type: none;
+  font-family: "Brush Script MT", cursive;
+  font-size: 20pt;
+  font-style: italic;
+  padding: 5px;
+  margin: 0;
+  color: #d9eee1;
+}
+.sidebar-li > a {
+  font-size: small;
+  color: #ffffff;
+}
+.sidebar-li {
+  list-style-type: none;
+}
+.sidebar-title {
+  background-color: #1e251e;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 60px;
+}
+a {
+  text-decoration: none;
+}

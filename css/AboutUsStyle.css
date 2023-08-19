@@ -1,0 +1,85 @@
+.panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "intro"
+    "vision"
+    "offer"
+    "community";
+  background-image: url("../images/about-us-bg.jpg");
+  background-size: cover;
+  border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px #000000;
+  justify-content: center;
+}
+.intro {
+  grid-area: intro;
+}
+.vision {
+  grid-area: vision;
+}
+.offer {
+  grid-area: offer;
+}
+.community {
+  grid-area: community;
+}
+.panel h2 {
+  color: #366d25;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "Sofia", sans-serif;
+}
+
+.panel p {
+  color: #050123;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto Slab", serif;
+  background-color: #5c795817;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.panel ul {
+  color: #3f2ccd;
+  font-size: 13px;
+  margin-bottom: 15px;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto Slab", serif;
+  background-color: #5c795817;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.panel ul li {
+  margin-bottom: 5px;
+}
+
+u {
+  text-decoration: underline;
+  color: blue;
+}
+.title {
+  color: #1c533c;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Trirong", serif;
+  text-shadow: 3px 3px 3px #ababab;
+}
+
+@media (min-width: 901px) {
+  .container {
+    grid-template-rows: 120px auto 100px;
+  }
+}
